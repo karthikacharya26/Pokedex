@@ -46,9 +46,7 @@ To get started with this project locally, follow these steps:
    ```bash
    npm install
 
-
-
-6. Start the frontend server:
+6. Start the development server:
 
     ```bash
     npm run dev
