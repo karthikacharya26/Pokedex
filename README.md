@@ -11,9 +11,6 @@ You can view the deployed project here: [Pokemon Explorer](https://pokedex-ecru-
 
 - **Frontend**: Next.js, TypeScript, Tailwind CSS
 - **State Management**: useState, useEffect
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Authentication**: bcrypt, JWT
 - **Packages**: npm
 
 ## Features
