@@ -11,6 +11,12 @@ interface Pokemon {
   sprite: string;
 }
 
+interface PokemonTypeInfo {
+  type: {
+    name: string;
+  };
+}
+
 const availableTypes = [
   "Grass",
   "Fire",
@@ -19,12 +25,6 @@ const availableTypes = [
   "Bug",
   "Flying",
   "Ground",
-  "Rock",
-  "Psychic",
-  "Ice",
-  "Dragon",
-  "Dark",
-  "Steel",
   "Fairy",
 ];
 
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
       const formattedData = res.map((res) => ({
         id: res.data.id,
         name: res.data.name,
-        types: res.data.types.map((typeInfo: any) => typeInfo.type.name),
+        types: res.data.types.map((typeInfo: PokemonTypeInfo) => typeInfo.type.name),
         sprite: res.data.sprites.front_default,
       }));
       setPokemons(formattedData);
